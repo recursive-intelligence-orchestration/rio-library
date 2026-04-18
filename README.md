@@ -43,6 +43,9 @@ The rio-library documentation in this repository is currently organized into the
 | [RIO_LIBRARY_SCRIPT_REFERENCE.md](layers/common_layer/knowledge/default/main/rio-library/RIO_LIBRARY_SCRIPT_REFERENCE.md) | create_agent.sh usage, parameters, examples |
 | [RIO_LIBRARY_FILE_STRUCTURE.md](layers/common_layer/knowledge/default/main/rio-library/RIO_LIBRARY_FILE_STRUCTURE.md) | Directory layout, what's in git vs generated, path mappings |
 | [RIO_LIBRARY_TROUBLESHOOTING.md](layers/common_layer/knowledge/default/main/rio-library/RIO_LIBRARY_TROUBLESHOOTING.md) | Common errors, diagnostics, solutions, recovery procedures |
+| [RIO_LIBRARY_PRODUCTION_DEPLOYMENT.md](layers/common_layer/knowledge/default/main/rio-library/RIO_LIBRARY_PRODUCTION_DEPLOYMENT.md) | Security hardening, performance optimization, monitoring, operational procedures |
+| [RIO_LIBRARY_MULTI_AGENT_COORDINATION.md](layers/common_layer/knowledge/default/main/rio-library/RIO_LIBRARY_MULTI_AGENT_COORDINATION.md) | Multi-agent patterns, coordination protocols, knowledge sharing, scaling |
+| [RIO_LIBRARY_BACKUP_RECOVERY.md](layers/common_layer/knowledge/default/main/rio-library/RIO_LIBRARY_BACKUP_RECOVERY.md) | Backup procedures, recovery workflows, disaster recovery, state migration |
 | [RIO_LIBRARY_SELF_REVEALING_ORCHESTRATION.md](layers/common_layer/knowledge/default/main/rio-library/RIO_LIBRARY_SELF_REVEALING_ORCHESTRATION.md) | Self-discovering architecture, bind mounts, orchestration patterns |
 | [RIO_LIBRARY_TECHNICAL_DEEP_DIVE.md](layers/common_layer/knowledge/default/main/rio-library/RIO_LIBRARY_TECHNICAL_DEEP_DIVE.md) | Docker Compose, technical architecture, component details |
 | [RIO_LIBRARY_ARCHITECTURAL_DECISIONS.md](layers/common_layer/knowledge/default/main/rio-library/RIO_LIBRARY_ARCHITECTURAL_DECISIONS.md) | WHY behind design decisions, trade-offs, alternatives rejected |
