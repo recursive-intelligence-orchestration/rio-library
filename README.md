@@ -1,5 +1,45 @@
 # rio-library
-Agent Zero Deployment Library for Recursive Intelligence Orchestration
+Recursive Intelligence Orchestration Library for Agent Zero Deployment
+
+## What Rio Library Is
+
+Rio Library is **the infrastructure kernel for self-growing software** - a living substrate that enables agents to perceive, reason about, and evolve their own infrastructure.
+
+### The Paradigm Shift
+
+**Traditional Infrastructure:**
+- Static configuration, hardcoded paths
+- Manual evolution, agents blind to their substrate
+- Infrastructure *for* agents
+
+**Rio Library:**
+- Self-discovering, dynamic configuration
+- Autonomous evolution, agents perceive their substrate
+- Infrastructure *is* an evolving system
+
+### How It Works
+
+Rio evolves like biological systems:
+1. **Changes happen** (contributions from humans or agents)
+2. **System assesses** - Does this improve capabilities? Preserve pattern DNA?
+3. **What works integrates** - Beneficial changes become part of the system
+4. **What doesn't gets rolled back** - Failed changes create "constraint shadows" (learning)
+5. **System learns** - Accumulated knowledge enables flowing around obstacles like water (Rio = river)
+
+### Core Capabilities
+
+- **Self-Discovery**: Finds own root dynamically, no hardcoded paths
+- **Meta-Awareness**: Infrastructure knows and describes itself
+- **Pattern DNA**: 11 invariants ensure compatibility across evolution
+- **Fractal Deployment**: Infinite nesting without breaking references
+- **Methodology Neutral**: Substrate for any framework or workflow
+- **Evolutionary**: Improves through use, learns from success and failure
+
+### What This Enables
+
+- **Immediate**: Production-ready Agent Zero with full self-awareness
+- **Near-term**: Agents proposing infrastructure improvements, automated integration
+- **Long-term**: Self-growing software, decentralized agent systems, adaptive infrastructure that flows around constraints
 
 ## Quick Start
 
@@ -54,6 +94,7 @@ The rio-library documentation in this repository is currently organized into the
 | [RIO_LIBRARY_AGENT_REASONING.md](layers/common_layer/knowledge/default/main/rio-library/RIO_LIBRARY_AGENT_REASONING.md) | Agent mental models, config-first rule, reasoning patterns |
 | [RIO_LIBRARY_NARRATIVE_DRIVEN_DEVELOPMENT.md](layers/common_layer/knowledge/default/main/rio-library/RIO_LIBRARY_NARRATIVE_DRIVEN_DEVELOPMENT.md) | Infrastructure as narrative, direct technical communication |
 | [RIO_LIBRARY_UPSTREAM_REFERENCES.md](layers/common_layer/knowledge/default/main/rio-library/RIO_LIBRARY_UPSTREAM_REFERENCES.md) | Agent Zero upstream integration, compatibility matrix |
+| [RIO_LIBRARY_CONTRIBUTING.md](layers/common_layer/knowledge/default/main/rio-library/RIO_LIBRARY_CONTRIBUTING.md) | Contributing to the living infrastructure, pattern fidelity validation, recursive evolution |
 | [RIO_LIBRARY_META_AND_GLOSSARY.md](layers/common_layer/knowledge/default/main/rio-library/RIO_LIBRARY_META_AND_GLOSSARY.md) | Project metadata, glossary, versioning, attribution |
 
 > **Note**: As rio-library evolves, this documentation layout may change; treat this table as a snapshot of the current organization rather than a fixed or exhaustive index.
@@ -69,20 +110,23 @@ The rio-library documentation in this repository is currently organized into the
 
 Agent Zero is an open-source, personal agentic framework that grows and learns with you. It acts as a dynamic AI assistant capable of handling tasks, managing conversations, and adapting through extensions and prompts. Think of it as a customizable AI 'engine' that can be extended for various roles (e.g., creative writing, technical analysis) without deep coding knowledge. For more details, visit [Agent Zero on GitHub](https://github.com/agent0ai/agent-zero).
 
-## Project Vision
+## Contributing
 
-Rio Library provides self-discovering infrastructure for Agent Zero deployments. The architecture eliminates hardcoded paths through dynamic root discovery, enabling fractal deployment patterns that adapt to any organizational structure or methodology.
+Rio Library is a **living, self-optimizing recursive infrastructure** - a meta-harness for Agent Zero that enables agents to perceive, reason about, and evolve their own substrate.
 
-### Design Philosophy
+**What makes Rio unique:** The infrastructure itself is alive and can evolve through the agents it hosts, while maintaining pattern fidelity through its 11 invariant patterns (Pattern DNA).
 
-Rio is built on the principle that infrastructure should be methodology-neutral. Whether deploying Field Architecture of Resonance, enterprise workflows, or custom frameworks, Rio provides the substrate without imposing constraints. The library discovers its own structure at runtime, self-heals broken references, and generates configurations dynamically.
+**We welcome contributions that:**
+- Enhance self-discovery and self-awareness mechanisms
+- Improve the recursive feedback loop
+- Strengthen pattern fidelity validation
+- Make the infrastructure more capable of autonomous evolution
 
-### Architecture Principles
+**We're building toward:** Agents that can observe, propose, and integrate improvements to their own infrastructure - true recursive self-optimization.
 
-- **Self-Discovery**: Every component traverses upward to find `.rio-library-root`, calculating paths relative to discovered roots
-- **Fractal Deployment**: Contexts and environments nest infinitely without breaking references
-- **Dynamic Generation**: Docker Compose files, symlinks, and configurations generate from discovered variables
-- **Methodology Agnostic**: The infrastructure carries whatever flows through it without imposing structure on content
+See [RIO_LIBRARY_CONTRIBUTING.md](layers/common_layer/knowledge/default/main/rio-library/RIO_LIBRARY_CONTRIBUTING.md) for detailed guidelines on contributing to this living system.
+
+**Key principle:** All contributions must preserve the 11 invariants defined in [RIO_LIBRARY_PATTERN_DNA.md](layers/common_layer/knowledge/default/main/rio-library/RIO_LIBRARY_PATTERN_DNA.md). The house is alive - help it grow.
 
 ## Prerequisites
 
