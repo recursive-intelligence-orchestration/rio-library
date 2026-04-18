@@ -90,6 +90,7 @@ The rio-library documentation in this repository is currently organized into the
 | [RIO_LIBRARY_TECHNICAL_DEEP_DIVE.md](layers/common_layer/knowledge/default/main/rio-library/RIO_LIBRARY_TECHNICAL_DEEP_DIVE.md) | Docker Compose, technical architecture, component details |
 | [RIO_LIBRARY_ARCHITECTURAL_DECISIONS.md](layers/common_layer/knowledge/default/main/rio-library/RIO_LIBRARY_ARCHITECTURAL_DECISIONS.md) | WHY behind design decisions, trade-offs, alternatives rejected |
 | [RIO_LIBRARY_PATTERN_DNA.md](layers/common_layer/knowledge/default/main/rio-library/RIO_LIBRARY_PATTERN_DNA.md) | Invariant patterns, substrate abstraction, compatibility validation, self-extension |
+| [RIO_LIBRARY_RATIONALE.md](layers/common_layer/knowledge/default/main/rio-library/RIO_LIBRARY_RATIONALE.md) | Scientific foundations: evolution, invariants, feedback loops, scale effects, living software |
 | [RIO_LIBRARY_EXTENSIBILITY.md](layers/common_layer/knowledge/default/main/rio-library/RIO_LIBRARY_EXTENSIBILITY.md) | Knowledge layers, profiles, dynamic system control, customization |
 | [RIO_LIBRARY_AGENT_REASONING.md](layers/common_layer/knowledge/default/main/rio-library/RIO_LIBRARY_AGENT_REASONING.md) | Agent mental models, config-first rule, reasoning patterns |
 | [RIO_LIBRARY_NARRATIVE_DRIVEN_DEVELOPMENT.md](layers/common_layer/knowledge/default/main/rio-library/RIO_LIBRARY_NARRATIVE_DRIVEN_DEVELOPMENT.md) | Infrastructure as narrative, direct technical communication |
@@ -128,18 +129,6 @@ See [RIO_LIBRARY_CONTRIBUTING.md](layers/common_layer/knowledge/default/main/rio
 
 **Key principle:** All contributions must preserve the 11 invariants defined in [RIO_LIBRARY_PATTERN_DNA.md](layers/common_layer/knowledge/default/main/rio-library/RIO_LIBRARY_PATTERN_DNA.md). The house is alive - help it grow.
 
-## Acknowledgments
-
-Rio Library stands on the shoulders of pioneers in recursive intelligence orchestration.
-
-**Special thanks to:**
-
-- **[Jan](https://github.com/frdel) and the Agent Zero community** - For creating Agent Zero, the agentic framework that serves as the foundation for Rio's living infrastructure. Agent Zero's extensibility and design philosophy enabled this evolutionary leap.
-
-- **Glenn J. Adams** - For pioneering the meta-harness concept and demonstrating how to wrap and extend Agent Zero's capabilities. His work on The Boot Code (TBC) provided the initial design patterns and architectural insights that evolved into Rio Library. The vestigial artifacts of his ideas are woven throughout this system, forming part of its evolutionary DNA.
-
-**What emerged:** Rio Library began as a proof of concept for extending Agent Zero, drawing from Glenn's meta-harness approach. Through iteration and evolution, it became something more - the infrastructure kernel for self-growing software. The future of living, evolving, self-building software is already here.
-
 ## Prerequisites
 
 At minimum, you'll need the following to get started (or equivalents for alternative setups). Adjust to your environment and goals as needed.
@@ -163,3 +152,15 @@ Here's a practical workflow to get oriented after reviewing Quick Start:
 3. **Customize Behavior and Settings**: In the host `containers/[agent]/` directory, edit the Docker Compose environment file and compose configuration (for example, `containers/a0-myagent/.env`, `containers/a0-myagent/.env.example`, and `containers/a0-myagent/docker-compose.yml`) to adjust ports and container-level settings, and use prompt files in the agent's layer directory to change behaviours. The in-container `/a0/.env` file is managed separately (see [RIO_LIBRARY_INSTALLATION.md → Advanced: Layer the /a0/.env file](layers/common_layer/knowledge/default/main/rio-library/RIO_LIBRARY_INSTALLATION.md#advanced-layer-the-a0env-file-via-rio-library-abstraction)).
 
 Start with this workflow and iterate as you become more familiar with the structure and capabilities.
+
+## Acknowledgments
+
+Rio Library stands on the shoulders of pioneers in recursive intelligence orchestration.
+
+**Special thanks to:**
+
+- **[Jan](https://github.com/frdel) and the Agent Zero community** - For creating Agent Zero, the agentic framework that serves as the foundation for Rio's living infrastructure. Agent Zero's extensibility and design philosophy enabled this evolutionary leap.
+
+- **Glenn J. Adams** - For pioneering the meta-harness concept and demonstrating how to wrap and extend Agent Zero's capabilities. His work on The Boot Code (TBC) provided the initial design patterns and architectural insights that evolved into Rio Library. The vestigial artifacts of his ideas are woven throughout this system, forming part of its evolutionary DNA.
+
+**What emerged:** Rio Library began as a proof of concept for extending Agent Zero, drawing from Glenn's meta-harness approach. Through iteration and evolution, it became something more - the infrastructure kernel for self-growing software. The future of living, evolving, self-building software is already here.
