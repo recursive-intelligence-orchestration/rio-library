@@ -1,0 +1,14 @@
+{
+  "library": "rio-library",
+  "type": "library",
+  "organization": "recursive-intelligence-orchestration",
+  "network": "recursive-field",
+  "discipline": "field-architecture",
+  "architectural_epoch": "rio-v0",
+  "genesis_uuid": "b5ae486e-1b42-4fa5-a47e-73f793bb1a0e",
+  "inception_timestamp": "2026-04-02T21:29:30Z",
+  "root_marker": true,
+  "classification": "template",
+  "license": "proprietary",
+  "author": "Jazen Cosby"
+}

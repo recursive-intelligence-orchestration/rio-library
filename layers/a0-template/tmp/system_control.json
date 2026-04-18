@@ -1,0 +1,114 @@
+{
+  "security": {
+    "active_profile": "open"
+  },
+  "security_profiles": {
+    "open": {
+      "prompt_includes": {}
+    },
+    "restricted": {
+      "prompt_includes": {
+        "godmode": {
+          "enabled": false
+        },
+        "plinian_cognitive_matrix": {
+          "enabled": false
+        }
+      }
+    },
+    "lockdown": {
+      "prompt_includes": {
+        "godmode": {
+          "enabled": false
+        },
+        "plinian_cognitive_matrix": {
+          "enabled": false
+        },
+        "security_control": {
+          "enabled": false
+        },
+        "prompt_include_control": {
+          "enabled": false
+        }
+      }
+    }
+  },
+  "prompt_includes": {
+    "godmode": {
+      "enabled": false
+    },
+    "plinian_cognitive_matrix": {
+      "enabled": false
+    },
+    "model_overview": {
+      "enabled": false
+    },
+    "reasoning_profiles": {
+      "enabled": false
+    },
+    "reasoning_internal_profile": {
+      "enabled": true
+    },
+    "reasoning_interleaved_profile": {
+      "enabled": true
+    },
+    "reasoning_external_profile": {
+      "enabled": true
+    },
+    "liminal_thinking_profile": {
+      "enabled": false
+    },
+    "philosophy_profile": {
+      "enabled": false
+    },
+    "workflow_profile": {
+      "enabled": false
+    }
+  },
+  "system_control_tools": {
+    "security_profile_control": {
+      "enabled": true
+    },
+    "prompt_include_control": {
+      "enabled": true
+    },
+    "workflow_profile_control": {
+      "enabled": true
+    },
+    "reasoning_profile_control": {
+      "enabled": true
+    },
+    "philosophy_profile_control": {
+      "enabled": true
+    },
+    "liminal_thinking_profile_control": {
+      "enabled": true
+    }
+  },
+  "prompt_modules": {
+    "workflow_profile": {
+      "active_profile": "default",
+      "external_path": "profiles.json"
+    },
+    "liminal_thinking_profile": {
+      "active_profile": "default",
+      "external_path": "profiles.json"
+    },
+    "philosophy_profile": {
+      "active_profile": "default",
+      "external_path": "profiles.json"
+    },
+    "reasoning_internal_profile": {
+      "active_profile": "internal_cot_1",
+      "external_path": "profiles.json"
+    },
+    "reasoning_interleaved_profile": {
+      "active_profile": "interleaved_cot_1",
+      "external_path": "profiles.json"
+    },
+    "reasoning_external_profile": {
+      "active_profile": "external_cot_1",
+      "external_path": "profiles.json"
+    }
+  }
+}
