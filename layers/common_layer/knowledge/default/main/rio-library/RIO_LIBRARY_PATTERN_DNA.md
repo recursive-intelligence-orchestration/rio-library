@@ -227,6 +227,193 @@ Can new methodologies adopt infrastructure without modification?
 
 ---
 
+### 7. Meta-Awareness Pattern
+
+**Invariant:** Systems can introspect their own infrastructure and configuration.
+
+**Concrete Implementation (Rio):**
+- Bind mounts expose `/containers`, `/layers`, `/volumes` inside containers
+- Agents can read their own orchestration files
+- Agents can see their own layer structure
+- Self-revealing orchestration via transparent mounts
+
+**Abstraction:**
+```
+PATTERN: Infrastructure Visibility
+- Make infrastructure visible to applications
+- Provide introspection mechanisms
+- Enable self-awareness of deployment structure
+- Allow autonomous management and modification
+
+SUBSTITUTION POINTS:
+- Visibility mechanism: bind mounts, API endpoints, metadata service, registry
+- Introspection scope: full infrastructure, limited metadata, read-only view
+- Access control: unrestricted, role-based, capability-based
+- Update capability: read-only awareness, self-modification allowed
+```
+
+**Validation Test:**
+```
+Can the system inspect its own configuration?
+Can the system understand its own deployment structure?
+Can the system determine its own resource allocations?
+```
+
+---
+
+### 8. Boundary & Permeability Pattern
+
+**Invariant:** Systems define boundaries with controlled permeability between internal and external.
+
+**Concrete Implementation (Rio):**
+- Container namespaces isolate processes
+- Read-only mounts prevent modification
+- Port mappings control network access
+- Volume mounts define data boundaries
+
+**Abstraction:**
+```
+PATTERN: Controlled Boundaries
+- Define clear system boundaries
+- Control what crosses boundaries (permeability)
+- Enforce boundary integrity
+- Separate internal state from external environment
+
+SUBSTITUTION POINTS:
+- Boundary mechanism: namespaces, VMs, processes, network segments
+- Permeability control: ports, APIs, file permissions, access tokens
+- Enforcement: kernel features, hypervisor, network rules, middleware
+- Persistence: boundary lifespan tied to runtime, infrastructure, or permanent
+```
+
+**Validation Test:**
+```
+Are system boundaries clearly defined?
+Is permeability controlled and documented?
+Can boundary violations be detected and prevented?
+```
+
+---
+
+### 9. State Lifecycle Pattern
+
+**Invariant:** Different lifecycle operations have different effects on state and different costs.
+
+**Concrete Implementation (Rio):**
+- Restart: `docker compose restart` - preserves container state, minimal disruption
+- Recreation: `docker compose down && up` - full reinitialization, reloads all config
+- Initialization: First startup, creates boundaries and loads state
+- Termination: Shutdown, preserves persistent state, discards ephemeral
+
+**Abstraction:**
+```
+PATTERN: Lifecycle Operations
+- Define distinct lifecycle phases
+- Each phase has different state effects
+- Different operations have different costs
+- Choose operation based on what needs to change
+
+LIFECYCLE PHASES:
+- Initialization: Create boundary, load persistent state, generate ephemeral state
+- Operation: Execute within boundary, modify state
+- Restart: Minimal disruption, preserve state, quick recovery
+- Recreation: Full reinitialization, reload configuration, clean state
+- Termination: Destroy boundary, preserve persistent state, discard ephemeral
+
+SUBSTITUTION POINTS:
+- Restart mechanism: process restart, service reload, hot reload
+- Recreation mechanism: container recreation, VM reboot, process respawn
+- State preservation: filesystem, database, object storage, memory snapshot
+- Initialization trigger: manual, automatic, scheduled, event-driven
+```
+
+**Validation Test:**
+```
+Are lifecycle operations clearly distinguished?
+Do different operations have predictable state effects?
+Can the system recover from each lifecycle operation?
+```
+
+---
+
+### 10. Dual Configuration Pattern
+
+**Invariant:** Infrastructure configuration is separate from application configuration.
+
+**Concrete Implementation (Rio):**
+- Orchestration config: `containers/<agent>/.env` - Docker Compose variables
+- Runtime config: `layers/<agent>/.env` - Application behavior variables
+- Clear boundary prevents mixing concerns
+- Independent update cycles
+
+**Abstraction:**
+```
+PATTERN: Configuration Separation
+- Separate infrastructure config from application config
+- Different consumers for different configs
+- Independent update mechanisms
+- Clear responsibility boundaries
+
+CONFIGURATION LAYERS:
+- Orchestration: Infrastructure, resources, deployment
+- Operational: Application behavior, credentials, runtime settings
+
+SUBSTITUTION POINTS:
+- Orchestration config: environment files, manifests, infrastructure-as-code
+- Operational config: config files, environment variables, config service
+- Separation mechanism: different files, different namespaces, different services
+- Update isolation: independent deployment, versioning, rollback
+```
+
+**Validation Test:**
+```
+Can infrastructure config be updated without touching application config?
+Can application config be updated without redeploying infrastructure?
+Are responsibilities clearly separated?
+```
+
+---
+
+### 11. Emergent Properties Pattern
+
+**Invariant:** Correct pattern implementation produces emergent capabilities beyond the sum of components.
+
+**Concrete Implementation (Rio):**
+- Self-discovery + Layer hierarchy → Portable deployments
+- Separation of concerns + Dynamic generation → Substrate independence
+- Config-first + Meta-awareness → Autonomous self-management
+- All patterns together → Interoperable, self-extending systems
+
+**Abstraction:**
+```
+PATTERN: Resonant Fields
+- Patterns correctly implemented produce emergent properties
+- Emergent properties enable higher-order capabilities
+- System identity emerges from pattern coherence
+- Interoperability emerges from shared patterns
+
+EMERGENT PROPERTIES:
+- Portability: From self-discovery + dynamic generation
+- Autonomy: From meta-awareness + config-first
+- Interoperability: From shared pattern DNA
+- Evolvability: From methodology neutrality + layer hierarchy
+- Resilience: From separation of concerns + lifecycle operations
+
+SUBSTITUTION POINTS:
+- Property measurement: metrics, tests, observations, validation
+- Property validation: automated tests, manual verification, peer review
+- Property documentation: explicit listing, implicit understanding, discovery
+```
+
+**Validation Test:**
+```
+Do the patterns produce capabilities beyond individual components?
+Can emergent properties be observed and measured?
+Do emergent properties enable higher-order system behaviors?
+```
+
+---
+
 ## Substitution Points
 
 These aspects CAN vary while maintaining Rio compatibility:
@@ -315,7 +502,42 @@ Q: Does infrastructure impose content constraints?
 Q: Can new methodologies adopt without modification?
 ```
 
-**Validation Result:** If all tests pass, variation is Rio-compatible.
+### 7. Meta-Awareness Test
+```
+Q: Can the system inspect its own configuration?
+Q: Can the system understand its own deployment structure?
+Q: Can the system determine its own resource allocations?
+```
+
+### 8. Boundary Test
+```
+Q: Are system boundaries clearly defined?
+Q: Is permeability controlled and documented?
+Q: Can boundary violations be detected and prevented?
+```
+
+### 9. Lifecycle Test
+```
+Q: Are lifecycle operations clearly distinguished?
+Q: Do different operations have predictable state effects?
+Q: Can the system recover from each lifecycle operation?
+```
+
+### 10. Dual Configuration Test
+```
+Q: Can infrastructure config be updated without touching application config?
+Q: Can application config be updated without redeploying infrastructure?
+Q: Are responsibilities clearly separated?
+```
+
+### 11. Emergent Properties Test
+```
+Q: Do the patterns produce capabilities beyond individual components?
+Q: Can emergent properties be observed and measured?
+Q: Do emergent properties enable higher-order system behaviors?
+```
+
+**Validation Result:** If all 11 tests pass, variation is Rio-compatible.
 
 ---
 
@@ -325,7 +547,7 @@ Q: Can new methodologies adopt without modification?
 
 1. **Extract Patterns** - Read this document and concrete implementation
 2. **Identify Substitution Points** - Determine what varies in your target substrate
-3. **Preserve Invariants** - Ensure all 6 core patterns are maintained
+3. **Preserve Invariants** - Ensure all 11 core patterns are maintained
 4. **Implement Variation** - Generate substrate-specific implementation
 5. **Validate Fidelity** - Run validation tests
 6. **Document Variation** - Record what was substituted and why
@@ -505,6 +727,11 @@ INVARIANTS (must preserve):
 4. Dynamic Generation - Templates + variables → configs
 5. Config-First - Read authoritative config before inferring
 6. Methodology Neutrality - Infrastructure serves, doesn't constrain
+7. Meta-Awareness - Systems can introspect their own infrastructure
+8. Boundary & Permeability - Controlled boundaries with defined permeability
+9. State Lifecycle - Distinct operations for different state changes
+10. Dual Configuration - Infrastructure config separate from application config
+11. Emergent Properties - Patterns produce capabilities beyond components
 
 SUBSTITUTION POINTS (can vary):
 - Storage substrate
@@ -513,15 +740,20 @@ SUBSTITUTION POINTS (can vary):
 - Network topology
 - Discovery mechanism
 - Template engine
+- Visibility mechanism
+- Boundary enforcement
+- Lifecycle operations
+- Configuration separation
 
 VALIDATION (confirms compatibility):
-- All 6 invariants preserved
+- All 11 invariants preserved
 - Interoperability maintained
 - Pattern fidelity verified
+- Emergent properties observable
 ```
 
 **Species Compatibility:**
-Any system preserving these 6 invariants is Rio-compatible and can interoperate with other Rio-compatible systems, regardless of substrate differences.
+Any system preserving these 11 invariants is Rio-compatible and can interoperate with other Rio-compatible systems, regardless of substrate differences.
 
 ---
 
@@ -541,13 +773,18 @@ This section captures patterns observed by agents that may become formalized:
 
 ## Conclusion
 
-Rio Library's pattern DNA enables:
-- **Substrate independence** - Run anywhere
-- **Evolutionary variation** - Adapt to new environments
-- **Species compatibility** - Interoperate despite differences
-- **Self-extension** - Agents can generate compatible variations
-- **Pattern fidelity** - Validate changes maintain compatibility
+Rio Library's 11-pattern DNA enables:
+- **Substrate independence** - Run anywhere (self-discovery, dynamic generation)
+- **Evolutionary variation** - Adapt to new environments (methodology neutrality, layer hierarchy)
+- **Species compatibility** - Interoperate despite differences (shared pattern DNA)
+- **Self-extension** - Agents can generate compatible variations (meta-awareness, emergent properties)
+- **Pattern fidelity** - Validate changes maintain compatibility (11 validation tests)
+- **Autonomous operation** - Systems manage themselves (meta-awareness, config-first)
+- **Resilient lifecycle** - Graceful state transitions (lifecycle operations, dual configuration)
+- **Controlled boundaries** - Security and isolation (boundary & permeability)
 
-The patterns are the DNA. The concrete implementation is one expression. Infinite compatible variations are possible.
+The 11 patterns are the DNA. The concrete implementation is one expression. Infinite compatible variations are possible.
 
-The system can now understand itself, extend itself, and colonize new substrates while maintaining the essential patterns that define "Rio-compatible."
+The system can now understand itself, extend itself, validate its own modifications, and colonize new substrates while maintaining the essential patterns that define "Rio-compatible."
+
+**Pattern DNA discovered from:** Rio Library concrete implementation + TBC/RNS architectural documentation + Bounded System Patterns + Agent observations.
