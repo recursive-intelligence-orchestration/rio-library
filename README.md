@@ -38,15 +38,19 @@ The rio-library documentation in this repository is currently organized into the
 | Document | Purpose |
 |----------|---------|
 | **README.md** (this file) | Overview, navigation, Quick Start, Prerequisites |
-| [RIO_LIBRARY_AGENT_REASONING.md](layers/common/knowledge/default/main/rio-library/RIO_LIBRARY_AGENT_REASONING.md) | Agent reasoning, mental models, and documentation perspectives |
-| [RIO_LIBRARY_ARCHITECTURAL_DECISIONS.md](layers/common/knowledge/default/main/rio-library/RIO_LIBRARY_ARCHITECTURAL_DECISIONS.md) | WHY behind design decisions, trade-offs, and alternatives rejected |
+| [RIO_LIBRARY_QUICK_REFERENCE.md](layers/common/knowledge/default/main/rio-library/RIO_LIBRARY_QUICK_REFERENCE.md) | Commands, ports, variables, workflows - quick lookup reference |
 | [RIO_LIBRARY_INSTALLATION.md](layers/common/knowledge/default/main/rio-library/RIO_LIBRARY_INSTALLATION.md) | Automated and manual installation, configuration, verification |
-| [RIO_LIBRARY_SELF_REVEALING_ORCHESTRATION.md](layers/common/knowledge/default/main/rio-library/RIO_LIBRARY_SELF_REVEALING_ORCHESTRATION.md) | Bind mounts and orchestration patterns |
-| [RIO_LIBRARY_EXTENSIBILITY.md](layers/common/knowledge/default/main/rio-library/RIO_LIBRARY_EXTENSIBILITY.md) | Knowledge, profiles, dynamic system control, prompts |
-| [RIO_LIBRARY_NARRATIVE_DRIVEN_DEVELOPMENT.md](layers/common/knowledge/default/main/rio-library/RIO_LIBRARY_NARRATIVE_DRIVEN_DEVELOPMENT.md) | Narrative Driven Development and story context |
-| [RIO_LIBRARY_TECHNICAL_DEEP_DIVE.md](layers/common/knowledge/default/main/rio-library/RIO_LIBRARY_TECHNICAL_DEEP_DIVE.md) | Docker Compose, file structure, agent perspectives |
-| [RIO_LIBRARY_UPSTREAM_REFERENCES.md](layers/common/knowledge/default/main/rio-library/RIO_LIBRARY_UPSTREAM_REFERENCES.md) | Index of upstream /a0/docs topics and how they relate to rio-library |
-| [RIO_LIBRARY_META_AND_GLOSSARY.md](layers/common/knowledge/default/main/rio-library/RIO_LIBRARY_META_AND_GLOSSARY.md) | Project meta: final thoughts, disclaimers, versioning, attribution, glossary of key terms |
+| [RIO_LIBRARY_SCRIPT_REFERENCE.md](layers/common/knowledge/default/main/rio-library/RIO_LIBRARY_SCRIPT_REFERENCE.md) | create_agent.sh usage, parameters, examples |
+| [RIO_LIBRARY_FILE_STRUCTURE.md](layers/common/knowledge/default/main/rio-library/RIO_LIBRARY_FILE_STRUCTURE.md) | Directory layout, what's in git vs generated, path mappings |
+| [RIO_LIBRARY_TROUBLESHOOTING.md](layers/common/knowledge/default/main/rio-library/RIO_LIBRARY_TROUBLESHOOTING.md) | Common errors, diagnostics, solutions, recovery procedures |
+| [RIO_LIBRARY_SELF_REVEALING_ORCHESTRATION.md](layers/common/knowledge/default/main/rio-library/RIO_LIBRARY_SELF_REVEALING_ORCHESTRATION.md) | Self-discovering architecture, bind mounts, orchestration patterns |
+| [RIO_LIBRARY_TECHNICAL_DEEP_DIVE.md](layers/common/knowledge/default/main/rio-library/RIO_LIBRARY_TECHNICAL_DEEP_DIVE.md) | Docker Compose, technical architecture, component details |
+| [RIO_LIBRARY_ARCHITECTURAL_DECISIONS.md](layers/common/knowledge/default/main/rio-library/RIO_LIBRARY_ARCHITECTURAL_DECISIONS.md) | WHY behind design decisions, trade-offs, alternatives rejected |
+| [RIO_LIBRARY_EXTENSIBILITY.md](layers/common/knowledge/default/main/rio-library/RIO_LIBRARY_EXTENSIBILITY.md) | Knowledge layers, profiles, dynamic system control, customization |
+| [RIO_LIBRARY_AGENT_REASONING.md](layers/common/knowledge/default/main/rio-library/RIO_LIBRARY_AGENT_REASONING.md) | Agent mental models, config-first rule, reasoning patterns |
+| [RIO_LIBRARY_NARRATIVE_DRIVEN_DEVELOPMENT.md](layers/common/knowledge/default/main/rio-library/RIO_LIBRARY_NARRATIVE_DRIVEN_DEVELOPMENT.md) | Infrastructure as narrative, direct technical communication |
+| [RIO_LIBRARY_UPSTREAM_REFERENCES.md](layers/common/knowledge/default/main/rio-library/RIO_LIBRARY_UPSTREAM_REFERENCES.md) | Agent Zero upstream integration, compatibility matrix |
+| [RIO_LIBRARY_META_AND_GLOSSARY.md](layers/common/knowledge/default/main/rio-library/RIO_LIBRARY_META_AND_GLOSSARY.md) | Project metadata, glossary, versioning, attribution |
 
 > **Note**: As rio-library evolves, this documentation layout may change; treat this table as a snapshot of the current organization rather than a fixed or exhaustive index.
 
