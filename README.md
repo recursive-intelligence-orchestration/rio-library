@@ -39,6 +39,7 @@ The rio-library documentation in this repository is currently organized into the
 |----------|---------|
 | **README.md** (this file) | Overview, navigation, Quick Start, Prerequisites |
 | [RIO_LIBRARY_AGENT_REASONING.md](layers/common/knowledge/default/main/rio-library/RIO_LIBRARY_AGENT_REASONING.md) | Agent reasoning, mental models, and documentation perspectives |
+| [RIO_LIBRARY_ARCHITECTURAL_DECISIONS.md](layers/common/knowledge/default/main/rio-library/RIO_LIBRARY_ARCHITECTURAL_DECISIONS.md) | WHY behind design decisions, trade-offs, and alternatives rejected |
 | [RIO_LIBRARY_INSTALLATION.md](layers/common/knowledge/default/main/rio-library/RIO_LIBRARY_INSTALLATION.md) | Automated and manual installation, configuration, verification |
 | [RIO_LIBRARY_SELF_REVEALING_ORCHESTRATION.md](layers/common/knowledge/default/main/rio-library/RIO_LIBRARY_SELF_REVEALING_ORCHESTRATION.md) | Bind mounts and orchestration patterns |
 | [RIO_LIBRARY_EXTENSIBILITY.md](layers/common/knowledge/default/main/rio-library/RIO_LIBRARY_EXTENSIBILITY.md) | Knowledge, profiles, dynamic system control, prompts |
