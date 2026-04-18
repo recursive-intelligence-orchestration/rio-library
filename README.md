@@ -62,21 +62,18 @@ Agent Zero is an open-source, personal agentic framework that grows and learns w
 
 ## Project Vision
 
-Recursive Intelligence Orchestration blends narrative storytelling with technical innovation. Stories drive the development of adaptable AI agents, creating a "feedback machine" where creativity and code evolve together.
+Rio Library provides self-discovering infrastructure for Agent Zero deployments. The architecture eliminates hardcoded paths through dynamic root discovery, enabling fractal deployment patterns that adapt to any organizational structure or methodology.
 
-### Origins of Recursive Intelligence Orchestration
+### Design Philosophy
 
-Recursive Intelligence Orchestration project began in mid-2023 with a spark of creativity, envisioning a magical tome of code and stories waiting to be explored. Around the same time, the earliest release of **Agent Zero** emerged.
+Rio is built on the principle that infrastructure should be methodology-neutral. Whether deploying Field Architecture of Resonance, enterprise workflows, or custom frameworks, Rio provides the substrate without imposing constraints. The library discovers its own structure at runtime, self-heals broken references, and generates configurations dynamically.
 
-### Unlocking a Story
+### Architecture Principles
 
-Imagine holding in your hands a magical tome that is Recursive Intelligence Orchestration, or rather, just one of infinite tomes that provide access to other dimensions through a vast library of knowledge and creativity.
-
-Those who discover the secrets of the tome will find themselves transported to a realm of endless possibility, where the boundaries of imagination and reality blur and merge. They have become a **Finder**, and they may choose to share what they have discovered with others.
-
-### Two Parallels Building Together
-
-The narrative and technical development are intertwined and evolve together. For the full story and a deeper treatment of Narrative Driven Development, see [RIO_LIBRARY_NARRATIVE_DRIVEN_DEVELOPMENT.md → Narrative Driven Development: Recursive Intelligence Orchestration](layers/common/knowledge/default/main/rio-library/RIO_LIBRARY_NARRATIVE_DRIVEN_DEVELOPMENT.md).
+- **Self-Discovery**: Every component traverses upward to find `.rio-library-root`, calculating paths relative to discovered roots
+- **Fractal Deployment**: Contexts and environments nest infinitely without breaking references
+- **Dynamic Generation**: Docker Compose files, symlinks, and configurations generate from discovered variables
+- **Methodology Agnostic**: The infrastructure carries whatever flows through it without imposing structure on content
 
 ## Prerequisites
 
