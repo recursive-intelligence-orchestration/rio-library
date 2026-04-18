@@ -128,6 +128,18 @@ See [RIO_LIBRARY_CONTRIBUTING.md](layers/common_layer/knowledge/default/main/rio
 
 **Key principle:** All contributions must preserve the 11 invariants defined in [RIO_LIBRARY_PATTERN_DNA.md](layers/common_layer/knowledge/default/main/rio-library/RIO_LIBRARY_PATTERN_DNA.md). The house is alive - help it grow.
 
+## Acknowledgments
+
+Rio Library stands on the shoulders of pioneers in recursive intelligence orchestration.
+
+**Special thanks to:**
+
+- **[Jan](https://github.com/frdel) and the Agent Zero community** - For creating Agent Zero, the agentic framework that serves as the foundation for Rio's living infrastructure. Agent Zero's extensibility and design philosophy enabled this evolutionary leap.
+
+- **Glenn J. Adams** - For pioneering the meta-harness concept and demonstrating how to wrap and extend Agent Zero's capabilities. His work on The Boot Code (TBC) provided the initial design patterns and architectural insights that evolved into Rio Library. The vestigial artifacts of his ideas are woven throughout this system, forming part of its evolutionary DNA.
+
+**What emerged:** Rio Library began as a proof of concept for extending Agent Zero, drawing from Glenn's meta-harness approach. Through iteration and evolution, it became something more - the infrastructure kernel for self-growing software. The future of living, evolving, self-building software is already here.
+
 ## Prerequisites
 
 At minimum, you'll need the following to get started (or equivalents for alternative setups). Adjust to your environment and goals as needed.
