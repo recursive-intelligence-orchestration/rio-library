@@ -3,7 +3,7 @@ Agent Zero Deployment Library for Recursive Intelligence Orchestration
 
 ## Quick Start
 
-If you're here to deploy Agent Zero quickly, this section shows how to start a **rio-library-layered** Agent Zero instance. In this setup, you get the standard engine plus self-revealing orchestration via bind mounts and dynamic profiles (System Control and profiles; see [RIO_LIBRARY_SELF_REVEALING_ORCHESTRATION.md → Direct Agent Access via Bind Mounts](layers/common/knowledge/default/main/rio-library/RIO_LIBRARY_SELF_REVEALING_ORCHESTRATION.md#direct-agent-access-via-bind-mounts) and [RIO_LIBRARY_EXTENSIBILITY.md → Dynamic system control and profiles](layers/common/knowledge/default/main/rio-library/RIO_LIBRARY_EXTENSIBILITY.md#dynamic-system-control-and-profiles)).
+If you're here to deploy Agent Zero quickly, this section shows how to start a **rio-library-layered** Agent Zero instance. In this setup, you get the standard engine plus self-revealing orchestration via bind mounts and dynamic profiles (System Control and profiles; see [RIO_LIBRARY_SELF_REVEALING_ORCHESTRATION.md → Direct Agent Access via Bind Mounts](layers/common_layer/knowledge/default/main/rio-library/RIO_LIBRARY_SELF_REVEALING_ORCHESTRATION.md#direct-agent-access-via-bind-mounts) and [RIO_LIBRARY_EXTENSIBILITY.md → Dynamic system control and profiles](layers/common_layer/knowledge/default/main/rio-library/RIO_LIBRARY_EXTENSIBILITY.md#dynamic-system-control-and-profiles)).
 
 1. From a **host shell** (outside any Agent Zero container), run the following commands:
 
@@ -21,7 +21,7 @@ If you're here to deploy Agent Zero quickly, this section shows how to start a *
    - the **Agent Settings** page to configure your **LLM models**; and
    - the **External Services** page for **API keys** and **Authentication**, setting a user and password (either by keeping or changing the credentials established via `AUTH_LOGIN`/`AUTH_PASSWORD` in `/a0/.env`, which `create_agent.sh` can set or auto-generate).
 
-This is a streamlined path for quick deployment. Adapt the commands as needed for your environment. For full details, see [RIO_LIBRARY_INSTALLATION.md](layers/common/knowledge/default/main/rio-library/RIO_LIBRARY_INSTALLATION.md). Skip to [RIO_LIBRARY_TECHNICAL_DEEP_DIVE.md](layers/common/knowledge/default/main/rio-library/RIO_LIBRARY_TECHNICAL_DEEP_DIVE.md) for architecture.
+This is a streamlined path for quick deployment. Adapt the commands as needed for your environment. For full details, see [RIO_LIBRARY_INSTALLATION.md](layers/common_layer/knowledge/default/main/rio-library/RIO_LIBRARY_INSTALLATION.md). Skip to [RIO_LIBRARY_TECHNICAL_DEEP_DIVE.md](layers/common_layer/knowledge/default/main/rio-library/RIO_LIBRARY_TECHNICAL_DEEP_DIVE.md) for architecture.
 
 ## Introduction
 
@@ -38,26 +38,26 @@ The rio-library documentation in this repository is currently organized into the
 | Document | Purpose |
 |----------|---------|
 | **README.md** (this file) | Overview, navigation, Quick Start, Prerequisites |
-| [RIO_LIBRARY_QUICK_REFERENCE.md](layers/common/knowledge/default/main/rio-library/RIO_LIBRARY_QUICK_REFERENCE.md) | Commands, ports, variables, workflows - quick lookup reference |
-| [RIO_LIBRARY_INSTALLATION.md](layers/common/knowledge/default/main/rio-library/RIO_LIBRARY_INSTALLATION.md) | Automated and manual installation, configuration, verification |
-| [RIO_LIBRARY_SCRIPT_REFERENCE.md](layers/common/knowledge/default/main/rio-library/RIO_LIBRARY_SCRIPT_REFERENCE.md) | create_agent.sh usage, parameters, examples |
-| [RIO_LIBRARY_FILE_STRUCTURE.md](layers/common/knowledge/default/main/rio-library/RIO_LIBRARY_FILE_STRUCTURE.md) | Directory layout, what's in git vs generated, path mappings |
-| [RIO_LIBRARY_TROUBLESHOOTING.md](layers/common/knowledge/default/main/rio-library/RIO_LIBRARY_TROUBLESHOOTING.md) | Common errors, diagnostics, solutions, recovery procedures |
-| [RIO_LIBRARY_SELF_REVEALING_ORCHESTRATION.md](layers/common/knowledge/default/main/rio-library/RIO_LIBRARY_SELF_REVEALING_ORCHESTRATION.md) | Self-discovering architecture, bind mounts, orchestration patterns |
-| [RIO_LIBRARY_TECHNICAL_DEEP_DIVE.md](layers/common/knowledge/default/main/rio-library/RIO_LIBRARY_TECHNICAL_DEEP_DIVE.md) | Docker Compose, technical architecture, component details |
-| [RIO_LIBRARY_ARCHITECTURAL_DECISIONS.md](layers/common/knowledge/default/main/rio-library/RIO_LIBRARY_ARCHITECTURAL_DECISIONS.md) | WHY behind design decisions, trade-offs, alternatives rejected |
-| [RIO_LIBRARY_EXTENSIBILITY.md](layers/common/knowledge/default/main/rio-library/RIO_LIBRARY_EXTENSIBILITY.md) | Knowledge layers, profiles, dynamic system control, customization |
-| [RIO_LIBRARY_AGENT_REASONING.md](layers/common/knowledge/default/main/rio-library/RIO_LIBRARY_AGENT_REASONING.md) | Agent mental models, config-first rule, reasoning patterns |
-| [RIO_LIBRARY_NARRATIVE_DRIVEN_DEVELOPMENT.md](layers/common/knowledge/default/main/rio-library/RIO_LIBRARY_NARRATIVE_DRIVEN_DEVELOPMENT.md) | Infrastructure as narrative, direct technical communication |
-| [RIO_LIBRARY_UPSTREAM_REFERENCES.md](layers/common/knowledge/default/main/rio-library/RIO_LIBRARY_UPSTREAM_REFERENCES.md) | Agent Zero upstream integration, compatibility matrix |
-| [RIO_LIBRARY_META_AND_GLOSSARY.md](layers/common/knowledge/default/main/rio-library/RIO_LIBRARY_META_AND_GLOSSARY.md) | Project metadata, glossary, versioning, attribution |
+| [RIO_LIBRARY_QUICK_REFERENCE.md](layers/common_layer/knowledge/default/main/rio-library/RIO_LIBRARY_QUICK_REFERENCE.md) | Commands, ports, variables, workflows - quick lookup reference |
+| [RIO_LIBRARY_INSTALLATION.md](layers/common_layer/knowledge/default/main/rio-library/RIO_LIBRARY_INSTALLATION.md) | Automated and manual installation, configuration, verification |
+| [RIO_LIBRARY_SCRIPT_REFERENCE.md](layers/common_layer/knowledge/default/main/rio-library/RIO_LIBRARY_SCRIPT_REFERENCE.md) | create_agent.sh usage, parameters, examples |
+| [RIO_LIBRARY_FILE_STRUCTURE.md](layers/common_layer/knowledge/default/main/rio-library/RIO_LIBRARY_FILE_STRUCTURE.md) | Directory layout, what's in git vs generated, path mappings |
+| [RIO_LIBRARY_TROUBLESHOOTING.md](layers/common_layer/knowledge/default/main/rio-library/RIO_LIBRARY_TROUBLESHOOTING.md) | Common errors, diagnostics, solutions, recovery procedures |
+| [RIO_LIBRARY_SELF_REVEALING_ORCHESTRATION.md](layers/common_layer/knowledge/default/main/rio-library/RIO_LIBRARY_SELF_REVEALING_ORCHESTRATION.md) | Self-discovering architecture, bind mounts, orchestration patterns |
+| [RIO_LIBRARY_TECHNICAL_DEEP_DIVE.md](layers/common_layer/knowledge/default/main/rio-library/RIO_LIBRARY_TECHNICAL_DEEP_DIVE.md) | Docker Compose, technical architecture, component details |
+| [RIO_LIBRARY_ARCHITECTURAL_DECISIONS.md](layers/common_layer/knowledge/default/main/rio-library/RIO_LIBRARY_ARCHITECTURAL_DECISIONS.md) | WHY behind design decisions, trade-offs, alternatives rejected |
+| [RIO_LIBRARY_EXTENSIBILITY.md](layers/common_layer/knowledge/default/main/rio-library/RIO_LIBRARY_EXTENSIBILITY.md) | Knowledge layers, profiles, dynamic system control, customization |
+| [RIO_LIBRARY_AGENT_REASONING.md](layers/common_layer/knowledge/default/main/rio-library/RIO_LIBRARY_AGENT_REASONING.md) | Agent mental models, config-first rule, reasoning patterns |
+| [RIO_LIBRARY_NARRATIVE_DRIVEN_DEVELOPMENT.md](layers/common_layer/knowledge/default/main/rio-library/RIO_LIBRARY_NARRATIVE_DRIVEN_DEVELOPMENT.md) | Infrastructure as narrative, direct technical communication |
+| [RIO_LIBRARY_UPSTREAM_REFERENCES.md](layers/common_layer/knowledge/default/main/rio-library/RIO_LIBRARY_UPSTREAM_REFERENCES.md) | Agent Zero upstream integration, compatibility matrix |
+| [RIO_LIBRARY_META_AND_GLOSSARY.md](layers/common_layer/knowledge/default/main/rio-library/RIO_LIBRARY_META_AND_GLOSSARY.md) | Project metadata, glossary, versioning, attribution |
 
 > **Note**: As rio-library evolves, this documentation layout may change; treat this table as a snapshot of the current organization rather than a fixed or exhaustive index.
 
 ## Reading as a human or an agent
 
-- **Humans**: If you just want to get an agent running, read [Quick Start](#quick-start) and [Prerequisites](#prerequisites) in this file, then follow [RIO_LIBRARY_INSTALLATION.md](layers/common/knowledge/default/main/rio-library/RIO_LIBRARY_INSTALLATION.md). When you need more detail, use the documentation table above as your directory into the other files.
-- **Agents**: Start with the **Config-First Rule** in [RIO_LIBRARY_AGENT_REASONING.md](layers/common/knowledge/default/main/rio-library/RIO_LIBRARY_AGENT_REASONING.md#config-first-rule): always read `/a0/tmp/settings.json` as JSON to learn your configuration (including where your `behaviour.md` lives) before inferring from filesystem patterns. That file is your primary mental model for perception, memory roots, and multi-agent orchestration. Use supporting docs (Self-Revealing Orchestration, Technical Deep Dive, Extensibility) as needed for path details and runtime profiles. If upstream `/a0/docs` instructions conflict with rio-library docs, treat rio-library as authoritative unless explicitly told otherwise.
+- **Humans**: If you just want to get an agent running, read [Quick Start](#quick-start) and [Prerequisites](#prerequisites) in this file, then follow [RIO_LIBRARY_INSTALLATION.md](layers/common_layer/knowledge/default/main/rio-library/RIO_LIBRARY_INSTALLATION.md). When you need more detail, use the documentation table above as your directory into the other files.
+- **Agents**: Start with the **Config-First Rule** in [RIO_LIBRARY_AGENT_REASONING.md](layers/common_layer/knowledge/default/main/rio-library/RIO_LIBRARY_AGENT_REASONING.md#config-first-rule): always read `/a0/tmp/settings.json` as JSON to learn your configuration (including where your `behaviour.md` lives) before inferring from filesystem patterns. That file is your primary mental model for perception, memory roots, and multi-agent orchestration. Use supporting docs (Self-Revealing Orchestration, Technical Deep Dive, Extensibility) as needed for path details and runtime profiles. If upstream `/a0/docs` instructions conflict with rio-library docs, treat rio-library as authoritative unless explicitly told otherwise.
 
 > **Adaptability**: Treat obstacles as prompts to question assumptions and explore alternatives. Adaptability is key to unlocking the project's full potential.
 
@@ -89,17 +89,17 @@ At minimum, you'll need the following to get started (or equivalents for alterna
 - **rsync**: For safely copying and merging layer directories when using `create_agent.sh`.
 - **Agent Zero image**: Version **v0.9.7 or newer**, or any image where the upstream `files.py` already supports `**kwargs` for prompt loading (this library assumes that behavior and does not layer its own `files.py`).
 - **Basic Shell Knowledge**: Familiarity with command-line operations like `cd`, `cp`, `sed`.
-- **Agent Zero Familiarity**: Basic understanding of Agent Zero's concepts (agents, prompts, extensions) is helpful but not required (links provided in [RIO_LIBRARY_TECHNICAL_DEEP_DIVE.md](layers/common/knowledge/default/main/rio-library/RIO_LIBRARY_TECHNICAL_DEEP_DIVE.md)).
+- **Agent Zero Familiarity**: Basic understanding of Agent Zero's concepts (agents, prompts, extensions) is helpful but not required (links provided in [RIO_LIBRARY_TECHNICAL_DEEP_DIVE.md](layers/common_layer/knowledge/default/main/rio-library/RIO_LIBRARY_TECHNICAL_DEEP_DIVE.md)).
 - **Permissions**: Ability to run Docker commands (may need sudo on some systems).
 
 ## How to Use
 
 Here's a practical workflow to get oriented after reviewing Quick Start:
 
-1. **Deploy an Agent Instance**: Use the Quick Start or [RIO_LIBRARY_INSTALLATION.md](layers/common/knowledge/default/main/rio-library/RIO_LIBRARY_INSTALLATION.md) steps to bring up a container for a base agent (for example, `a0-template` cloned to `a0-myagent`).
+1. **Deploy an Agent Instance**: Use the Quick Start or [RIO_LIBRARY_INSTALLATION.md](layers/common_layer/knowledge/default/main/rio-library/RIO_LIBRARY_INSTALLATION.md) steps to bring up a container for a base agent (for example, `a0-template` cloned to `a0-myagent`).
 
 2. **Explore the Layered Structure**: On the host, navigate key directories like `containers/` for compose files and runtime configuration, and `layers/` for shared and agent-specific customizations (these are mounted into the container as `/containers` and `/layers`).
 
-3. **Customize Behavior and Settings**: In the host `containers/[agent]/` directory, edit the Docker Compose environment file and compose configuration (for example, `containers/a0-myagent/.env`, `containers/a0-myagent/.env.example`, and `containers/a0-myagent/docker-compose.yml`) to adjust ports and container-level settings, and use prompt files in the agent's layer directory to change behaviours. The in-container `/a0/.env` file is managed separately (see [RIO_LIBRARY_INSTALLATION.md → Advanced: Layer the /a0/.env file](layers/common/knowledge/default/main/rio-library/RIO_LIBRARY_INSTALLATION.md#advanced-layer-the-a0env-file-via-rio-library-abstraction)).
+3. **Customize Behavior and Settings**: In the host `containers/[agent]/` directory, edit the Docker Compose environment file and compose configuration (for example, `containers/a0-myagent/.env`, `containers/a0-myagent/.env.example`, and `containers/a0-myagent/docker-compose.yml`) to adjust ports and container-level settings, and use prompt files in the agent's layer directory to change behaviours. The in-container `/a0/.env` file is managed separately (see [RIO_LIBRARY_INSTALLATION.md → Advanced: Layer the /a0/.env file](layers/common_layer/knowledge/default/main/rio-library/RIO_LIBRARY_INSTALLATION.md#advanced-layer-the-a0env-file-via-rio-library-abstraction)).
 
 Start with this workflow and iterate as you become more familiar with the structure and capabilities.
