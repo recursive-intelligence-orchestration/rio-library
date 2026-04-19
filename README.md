@@ -3,7 +3,7 @@ Recursive Intelligence Orchestration Library for Agent Zero Deployment
 
 ## What Rio Library Is
 
-Rio Library is **the infrastructure kernel for self-growing software** - a living substrate that enables agents to perceive, reason about, and evolve their own infrastructure.
+Rio Library is a sophisticated deployment framework designed for Agent Zero that utilizes a recursive intelligence architecture to enable self-optimizing and portable AI environments. If functions as **the infrastructure kernel for self-growing software** - a living substrate that enables agents to perceive, reason about, and evolve their own infrastructure. By employing a self-discovery pattern centered on a root marker file, the system eliminates rigid, hardcoded paths, allowing for fractal nesting across contexts. The infrastructure is built on eleven core invariants, including a layered hierarchy and methodology neutrality, ensuring that the underlying substrate supports any organizational strategy without imposing constraints on content. It automates environment setup through dynamic template generation and self-healing symlinks, which synchronize the host filesystem with containerized runtimes. Agents operating within this library follow a config-first rule, prioritizing authoritative JSON settings over filesystem inferences to maintain high levels of meta-awareness and operational stability. This framework ulltimately provides a resilient, substrate-independent foundation that allows autonomous agents to observe, manage, and evolve their own deployment structures.
 
 ### The Paradigm Shift
 
